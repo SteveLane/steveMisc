@@ -5,7 +5,7 @@ Authors@R: person("Steve", "Lane", email = "lane.s@unimelb.edu.au",
                   role = c("aut", "cre"))
 Description: This package does exactly what it says in the title - it provides
     miscellaneous functions that I have found useful whilst data science-ing.
-Depends: R (>= 3.4.3)
+Depends: R (>= 3.4.0)
 License: MIT
 Encoding: UTF-8
 LazyData: true
