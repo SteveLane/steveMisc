@@ -1,0 +1,15 @@
+Package: steveMisc
+Title: Miscellaneous functions for data science-ing
+Version: 0.1.0
+Authors@R: person("Steve", "Lane", email = "lane.s@unimelb.edu.au",
+                  role = c("aut", "cre"))
+Description: This package does exactly what it says in the title - it provides
+    miscellaneous functions that I have found useful whilst data science-ing.
+Depends: R (>= 3.4.3)
+License: MIT
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/SteveLane/steveMisc
+BugReports: https://github.com/SteveLane/steveMisc/issues
+Imports: dplyr,
+    rlang
