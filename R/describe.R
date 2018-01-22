@@ -12,6 +12,7 @@
 #' my_data <- data_frame(g1 = c(1, 1, 2, 2, 2))
 #' describe(my_data, g1)
 #' my_data %>% describe(g1)
+#' @export
 describe <- function(df, group_var) {
     group_var <- rlang::enquo(group_var)
     df %>%
