@@ -9,7 +9,7 @@
 #'     proportion of each category, and the cumulative proportion. The
 #'     data_frame is sorted by descending number of entries.
 #' @examples
-#' my_data <- data_frame(g1 = c(1, 1, 2, 2, 2))
+#' my_data <- dplyr::data_frame(g1 = c(1, 1, 2, 2, 2))
 #' describe(my_data, g1)
 #' my_data %>% describe(g1)
 #' @export
