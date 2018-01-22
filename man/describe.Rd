@@ -22,7 +22,9 @@ This function is a convenience function to produce a summary of a grouped
     variable.
 }
 \examples{
-my_data <- data_frame(g1 = c(1, 1, 2, 2, 2))
+\dontrun{
+my_data <- dplyr::data_frame(g1 = c(1, 1, 2, 2, 2))
 describe(my_data, g1)
 my_data \%>\% describe(g1)
+}
 }

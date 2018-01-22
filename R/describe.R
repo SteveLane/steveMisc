@@ -9,16 +9,19 @@
 #'     proportion of each category, and the cumulative proportion. The
 #'     data_frame is sorted by descending number of entries.
 #' @examples
+#' \dontrun{
 #' my_data <- dplyr::data_frame(g1 = c(1, 1, 2, 2, 2))
 #' describe(my_data, g1)
 #' my_data %>% describe(g1)
+#' }
 #' @export
 describe <- function(df, group_var) {
-    `%>%` <- magrittr::`%>%`
+    ## Remove warnings
+    n <- p <- NULL
     group_var <- rlang::enquo(group_var)
     df %>%
         dplyr::group_by(!!group_var) %>%
-        dplyr::summarise(n = dplyr::n()) %>%
+        dplyr::summarise(n = n()) %>%
         dplyr::arrange(dplyr::desc(n)) %>%
         dplyr::mutate(p = n / sum(n),
                       cum_p = cumsum(p))
